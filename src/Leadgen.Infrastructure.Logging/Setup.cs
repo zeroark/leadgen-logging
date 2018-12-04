@@ -51,6 +51,8 @@ namespace Leadgen.Infrastructure.Logging
                 .MinimumLevel.Verbose()
                 .WriteTo.EventCollector(Config.Host, Config.Token, source: Config.Source, sourceType: "json", host: Config.Server, index: Config.Index)                
                 .Enrich.FromLogContext()
+                .Enrich.WithExceptionDetails()
+                .Enrich.With<AzureWebAppsNameEnricher>()
                 .CreateLogger();
         }
 

@@ -1,4 +1,5 @@
-﻿using Serilog;
+﻿using System;
+using Serilog;
 using NUnit.Framework;
 
 namespace Leadgen.Infrastructure.Logging.Test
@@ -68,7 +69,14 @@ namespace Leadgen.Infrastructure.Logging.Test
         public void FatalTest()
         {
             _Logger.Fatal("Testing Fatal logging for Infrastructure library.");
-        }        
+        }
+
+        [Test]
+        public void ExceptionTest()
+        {
+            ArgumentNullException ex = new ArgumentNullException("test", "Parameter 'test' is null.");
+            _Logger.Error(ex, "An exception was raised: {Exception}", ex.Message);
+        }
 
         #endregion
     }
