@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>1.0.0</version>
+    <title>$title$</title>
+    <authors>Tranzact Digital Team</authors>
+    <owners>cleon</owners>    
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>First project release.</releaseNotes>
+    <copyright>$copyright$</copyright>
+    <tags>leadgen logging splunk</tags>
+    <dependencies>      
+      <dependency id="Serilog" version="2.7.1" />
+      <dependency id="Serilog.Exceptions" version="4.1.0" />
+      <dependency id="Serilog.Sinks.Splunk" version="2.5.0" />          
+      <dependency id="Collector.Serilog.Enrichers.AzureWebApps" version="6.0.8" />
+      <dependency id="Newtonsoft.Json" version="6.0.8" />
+    </dependencies>
+  </metadata>
+</package>
