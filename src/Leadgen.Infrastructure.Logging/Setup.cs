@@ -23,7 +23,7 @@ namespace Leadgen.Infrastructure.Logging
         public Setup()
         {
             // Get the default configuration if none set
-            Config = Config ?? new SplunkConfig();            
+            Config = Config ?? new SplunkConfig();
         }
 
         /// <summary>
@@ -49,7 +49,7 @@ namespace Leadgen.Infrastructure.Logging
             // Setting our the global application logger
             return new LoggerConfiguration()
                 .MinimumLevel.Verbose()
-                .WriteTo.EventCollector(Config.Host, Config.Token, source: Config.Source, sourceType: "json", host: Config.Server, index: Config.Index)                
+                .WriteTo.EventCollector(Config.Host, Config.Token, source: Config.Source, sourceType: "json", host: Config.Server, index: Config.Index)
                 .Enrich.FromLogContext()
                 .Enrich.WithExceptionDetails()
                 .Enrich.With<AzureWebAppsNameEnricher>()

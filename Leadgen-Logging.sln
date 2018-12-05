@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27428.2005
+VisualStudioVersion = 15.0.27130.2003
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Leadgen.Infrastructure.Logging", "src\Leadgen.Infrastructure.Logging\Leadgen.Infrastructure.Logging.csproj", "{52219FBB-BD01-4BEB-9327-77CC53582765}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Leadgen.Infrastructure.Logging.Test", "tests\Leadgen.Infrastructure.Logging.Test\Leadgen.Infrastructure.Logging.Test.csproj", "{548914D9-8B50-4C04-874B-485685C563A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Leadgen.Infrastructure.Logging", "src\Leadgen.Infrastructure.Logging\Leadgen.Infrastructure.Logging.csproj", "{788EFC8D-0707-43B0-AE2E-FAC146CA5B70}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{52219FBB-BD01-4BEB-9327-77CC53582765}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{52219FBB-BD01-4BEB-9327-77CC53582765}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{52219FBB-BD01-4BEB-9327-77CC53582765}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{52219FBB-BD01-4BEB-9327-77CC53582765}.Release|Any CPU.Build.0 = Release|Any CPU
 		{548914D9-8B50-4C04-874B-485685C563A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{548914D9-8B50-4C04-874B-485685C563A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{548914D9-8B50-4C04-874B-485685C563A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{548914D9-8B50-4C04-874B-485685C563A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{788EFC8D-0707-43B0-AE2E-FAC146CA5B70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{788EFC8D-0707-43B0-AE2E-FAC146CA5B70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{788EFC8D-0707-43B0-AE2E-FAC146CA5B70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{788EFC8D-0707-43B0-AE2E-FAC146CA5B70}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

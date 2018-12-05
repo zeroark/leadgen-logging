@@ -74,12 +74,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Leadgen.Infrastructure.Logging\Leadgen.Infrastructure.Logging.csproj">
-      <Project>{52219fbb-bd01-4beb-9327-77cc53582765}</Project>
-      <Name>Leadgen.Infrastructure.Logging</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="App.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -89,6 +83,12 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{82A7F48D-3B50-4B1E-B82E-3ADA8210C358}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Leadgen.Infrastructure.Logging\Leadgen.Infrastructure.Logging.csproj">
+      <Project>{788efc8d-0707-43b0-ae2e-fac146ca5b70}</Project>
+      <Name>Leadgen.Infrastructure.Logging</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
